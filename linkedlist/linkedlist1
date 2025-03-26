@@ -1,0 +1,7 @@
+import java.util.Scanner;
+
+class linkedlist{
+    public static void main(String[] args){
+        
+    }
+}

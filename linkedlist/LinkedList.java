@@ -16,6 +16,8 @@ public class LinkedList{
  public void insertAtBeginning(int val){
     Node newNode = new Node(val);
 
+    {}
+
     }
     
 }

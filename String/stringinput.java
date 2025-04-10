@@ -4,6 +4,13 @@ public class stringinput{
     Scanner input = new Scanner(System.in);
     String name;
     name = input.next();
-    System.out.prinln(name);
+    System.out.println(name);
+
+    // NextLine
+    String Sentence;
+
+    Sentence = input.nextLine();
+    System.out.println(Sentence);
+
     
 }}

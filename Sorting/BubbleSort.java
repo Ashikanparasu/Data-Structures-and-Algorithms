@@ -4,14 +4,13 @@ public class BubbleSort {
 
         
                 int array []= {5,4,1,3,2};
-                basicbubble bb = new basicbubble();
-                bb.BubbleSortt(array);
-                System.err.println(array);
+               
+                BubbleSortt(array);
+                printarr(array);
 
             }
-        }
+        
 
-        class basicbubble{
 
             public  static void BubbleSortt(int arr[]){
 
@@ -26,6 +25,12 @@ public class BubbleSort {
                         }
 
                     }
+                }
+            }
+
+            public static void printarr(int arr[]){
+                for (int i =0 ; i<arr.length;i++){
+                    System.out.print(arr[i]+" ");
                 }
             }
 

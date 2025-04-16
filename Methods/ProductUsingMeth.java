@@ -1,4 +1,4 @@
-
+ 
 public class ProductUsingMeth {
 
     public static int Multiply(int a ,int b){

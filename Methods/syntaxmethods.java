@@ -13,7 +13,8 @@ public class syntaxmethods {
     public static void main(String args[]){
 
 
-        Name();
+        Name(); 
+        // function Call
     }
     
 }

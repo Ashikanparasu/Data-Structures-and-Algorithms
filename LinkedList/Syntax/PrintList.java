@@ -23,6 +23,7 @@ public class PrintList {
         Node newNode = new Node(data);
         if ( head == null){
             head = newNode;
+            return;
         }
         newNode.next = head;
         head = newNode;
@@ -33,10 +34,14 @@ public class PrintList {
     public void addLast(int data){
         Node newNode = new Node(data);
         if ( tail == null){
+            head = newNode;
             tail = newNode;
         }
-        tail.next = tail;
+        else{
+
+        tail.next = newNode;
         tail = newNode;
+        }
     }
 
     // Print Linked list
@@ -69,6 +74,13 @@ public class PrintList {
     public static void main(String args[]){
         PrintList ll = new PrintList();
        
+     ll.printList();
+     ll.addFirst(4);
+     ll.addFirst(3);
+     ll.addFirst(2);
+     ll.addFirst(1);
+     
+     ll.addLast(5);
      ll.printList();
         
 

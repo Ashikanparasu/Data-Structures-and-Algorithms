@@ -84,6 +84,7 @@ public class RemoveFirst {
         }
 
         head = head.next;
+        size--;
     }
 
 
@@ -99,6 +100,7 @@ public class RemoveFirst {
      ll.removeFirst();
     
      ll.printList();
+     System.out.println(ll.size);
         
 
     }

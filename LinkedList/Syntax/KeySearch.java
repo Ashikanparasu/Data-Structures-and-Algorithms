@@ -114,7 +114,7 @@ public class KeySearch {
                     return;
                 }
                 temp = temp.next;
-                index++;
+                index++; 
             }
         }
         public static void main(String args[]){
@@ -130,6 +130,8 @@ public class KeySearch {
         ll.removeLast();
          ll.printList();
          ll.searchKey(3);
+         ll.searchKey(1);
+         ll.searchKey(0);
          System.out.println(ll.size);
             
     

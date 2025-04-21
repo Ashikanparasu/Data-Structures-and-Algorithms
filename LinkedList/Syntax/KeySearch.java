@@ -103,7 +103,7 @@ public class KeySearch {
        
         // Search Key
 
-        public void searchKey(int key){
+        public int searchKey(int key){
 
             Node temp = head;
             int index =0;
@@ -112,6 +112,9 @@ public class KeySearch {
                 if (temp.data == key){
                     System.out.println("Key found at index: " + index);
                     return;
+                }
+                else{
+                    System.out.println("Key not found at index: " + index);
                 }
                 temp = temp.next;
                 index++; 
@@ -130,8 +133,9 @@ public class KeySearch {
         ll.removeLast();
          ll.printList();
          ll.searchKey(3);
-         ll.searchKey(1);
          ll.searchKey(0);
+         
+         
          System.out.println(ll.size);
             
     

@@ -45,6 +45,21 @@ public class BinaryTree {
             preorder(root.Right);
         }
 
+        // Inorder Traversal of Binary Tree
+        // Left -> Root -> Right
+
+        public static void inorder(Node root){
+            if(root == null){
+                return ;
+            }
+
+            inorder(root.Left);
+            System.out.print(root.Data + " ");
+            inorder(root.Right);
+
+
+        }
+
     }
 
 
@@ -57,6 +72,8 @@ public class BinaryTree {
         System.err.println(root.Data);
 
         treeOps.preorder(root);
+        System.out.println();
+        treeOps.inorder(root);
          
         
        

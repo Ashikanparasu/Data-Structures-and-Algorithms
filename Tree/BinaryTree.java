@@ -30,19 +30,38 @@ public class BinaryTree {
 
         }
 
+        // Preorder Traversal of Binary Tree
+        // Root -> Left -> Right
+        // Time Complexity: O(n)
+       
+
+
+        public static void preorder(Node root){
+            if(root == null){
+                return;
+            }
+            System.out.print(root.Data + " ");
+            preorder(root.Left);
+            preorder(root.Right);
+        }
+
     }
 
 
 
     public static void main(String args[]) {
         int arr[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
+
         BinaryTreeOperations treeOps = new BinaryTreeOperations();
         Node root = treeOps.buildTree(arr);
         System.err.println(root.Data);
+
+        treeOps.preorder(root);
+         
         
-        // You can add methods to traverse or manipulate the tree here
+       
     }
        
 
-    // Add methods for inserting, deleting, searching, etc. as needed
+   
 }

@@ -49,6 +49,16 @@ public class BinaryTreeSyntax {
             Inorder(root.right);
 
         }
+
+        public static void Postorder(Node root){
+            if(root == null){
+                return;
+            }
+
+            Postorder(root.left);
+            Postorder(root.right);
+            System.out.print(root.data + " ");
+        }
     }
 
     public static void main(String[] args) {
@@ -60,6 +70,8 @@ public class BinaryTreeSyntax {
         System.out.println("Right Child of Root: " + (root.right != null ? root.right.data : "null"));  
 
         BinaryOperator.Inorder(root);
+        System.out.println();
+        BinaryOperator.Postorder(root);
 
     }
 

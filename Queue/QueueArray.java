@@ -38,6 +38,13 @@ public class QueueArray {
         return V;
     }
 
+    public static int peek(){
+        if (isEmpty()){
+            return -1;
+        }
+        return arr[0];
+    }
+
     public static void main (String args[]){
 
         QueueArray Q = new QueueArray(5);
@@ -46,6 +53,7 @@ public class QueueArray {
         Q.add(30);
         System.out.println(Q.isEmpty());
         System.out.println(Q.remove());
+        System.out.println(Q.peek());
     }
 
     

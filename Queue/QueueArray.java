@@ -25,6 +25,19 @@ public class QueueArray {
 
     }
 
+    public static int remove(){
+
+        if (isEmpty()){
+            System.out.println("Queue Empty");
+            return -1;
+        }
+        int V = arr[0];
+        for(int i = 0 ; i < rear ; i++){
+            arr[i]= arr[i+1];
+        }
+        return V;
+    }
+
     public static void main (String args[]){
 
         QueueArray Q = new QueueArray(5);
@@ -32,6 +45,7 @@ public class QueueArray {
         Q.add(20);
         Q.add(30);
         System.out.println(Q.isEmpty());
+        System.out.println(Q.remove());
     }
 
     

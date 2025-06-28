@@ -59,6 +59,16 @@ public class BinaryTreeSyntax {
             Postorder(root.right);
             System.out.print(root.data + " ");
         }
+
+        public static int height(Node root){
+        if (root == null){
+            return 0;
+        }
+
+        int heightLeft = height(root.left);
+        int heightRight = height(root.right);
+        return Math.max(heightLeft , heightRight) + 1;
+    }
     }
 
     public static void main(String[] args) {
@@ -72,6 +82,9 @@ public class BinaryTreeSyntax {
         BinaryOperator.Inorder(root);
         System.out.println();
         BinaryOperator.Postorder(root);
+        System.out.println();
+
+        System.out.println(BinaryOperator.height(root));
 
     }
 

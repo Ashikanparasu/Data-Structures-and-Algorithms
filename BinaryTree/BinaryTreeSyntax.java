@@ -80,6 +80,16 @@ public class BinaryTreeSyntax {
 
         }
 
+        public static int sumnode(Node root){
+            if (root == null){
+                return 0;
+            }
+
+            int LeftSum = sumnode(root.left);
+            int RightSum = sumnode(root.right);
+            return LeftSum + RightSum + root.data;
+        }
+
 
     }
 
@@ -99,6 +109,8 @@ public class BinaryTreeSyntax {
         System.out.println(BinaryOperator.height(root));
 
         System.out.println(BinaryOperator.NodeCount(root));
+
+        System.out.println(BinaryOperator.sumnode(root));
 
     }
 

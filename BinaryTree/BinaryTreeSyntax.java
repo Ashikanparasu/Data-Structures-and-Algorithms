@@ -90,6 +90,20 @@ public class BinaryTreeSyntax {
             return LeftSum + RightSum + root.data;
         }
 
+        public static int DiameterN2 (Node root){
+            if (root == null){
+                return 0;
+            }
+
+            int LD = DiameterN2(root.left);
+            int LH = height(root.left);
+            int RD = DiameterN2(root.right);
+            int RH = height(root.right);
+
+            int Self = LH + RH +1;
+            return Math.max(Self ,Math.max(LD , RD));
+        }
+
 
     }
 
@@ -111,6 +125,10 @@ public class BinaryTreeSyntax {
         System.out.println(BinaryOperator.NodeCount(root));
 
         System.out.println(BinaryOperator.sumnode(root));
+
+        System.out.println(BinaryOperator.DiameterN2(root));
+
+        
 
     }
 

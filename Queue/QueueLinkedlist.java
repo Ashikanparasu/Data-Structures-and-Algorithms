@@ -61,6 +61,16 @@ public class QueueLinkedlist {
         }
         return head.data;
     }
+
+    public static int height(Node root){
+        if (root = null){
+            return 0;
+        }
+
+        int heightLeft = height(root.left);
+        int heightRight = height(root.right);
+        return Math.max(heightLeft , heightRight) + 1;
+    }
     }
     
     public static void main (String args[]){

@@ -34,6 +34,24 @@ public class BuildBST {
 
     }
 
+    public static boolean Search(Node root , int val){
+        if(root == null){
+            return false;
+        }
+
+        if(root.data == val){
+            return true;
+        }
+        if(root.data>val){
+            Search(root.left,val);
+        }
+        else{
+         Search(root.right,val);
+        }
+
+
+    }
+
         public static void main(String [] args){
           
             int arr[] = {5,1,3,4,2,7};
@@ -46,6 +64,7 @@ public class BuildBST {
             }
 
             inorder(root);
+           System.out.println( Search(root,7));
 
         }
     }

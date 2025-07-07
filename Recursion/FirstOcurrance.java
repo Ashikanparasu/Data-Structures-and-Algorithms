@@ -2,7 +2,7 @@ public class FirstOcurrance {
 
 
     public static int search(int arr[],int key,int idx){
-        if(idx == arr.length -1 ){
+        if(idx == arr.length  ){
             return -1;
         }
 
@@ -15,7 +15,7 @@ public class FirstOcurrance {
 
     public static void main(String[] args){
         int array[] ={1,4,5,6};
-        System.out.println(search(array,5,0)); 
+        System.out.println(search(array,6,0)); 
     }
     
 }

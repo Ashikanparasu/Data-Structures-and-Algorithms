@@ -37,9 +37,9 @@ public class BFS {
 
         graph[5].add(new edge(5,3,1));
         graph[5].add(new edge(5,4,1));
-        graph[5].add(new edge(5,7,1));
+        graph[5].add(new edge(5,6,1));
 
-        graph[7].add(new edge(7,5,1));
+        graph[6].add(new edge(6,5,1));
 
 
     }
@@ -74,6 +74,9 @@ public class BFS {
         createGraph(graph);
 
         bfs(graph);
+
+        System.out.println();
+         bfs(graph);
 
     }
     

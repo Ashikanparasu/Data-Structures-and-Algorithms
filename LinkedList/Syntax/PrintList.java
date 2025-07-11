@@ -80,7 +80,7 @@ public class PrintList {
      ll.addFirst(2);
      ll.addFirst(1);
      
-     ll.addLast(5);
+    
      ll.printList();
         
 

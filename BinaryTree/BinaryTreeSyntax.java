@@ -120,7 +120,7 @@ public class BinaryTreeSyntax {
         BinaryOperator.Postorder(root);
         System.out.println();
 
-        System.out.println(BinaryOperator.height(root));
+        System.out.println(BinaryOperator.height(root)); 
 
         System.out.println(BinaryOperator.NodeCount(root));
 

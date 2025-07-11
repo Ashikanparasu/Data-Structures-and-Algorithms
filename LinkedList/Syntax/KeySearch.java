@@ -103,7 +103,7 @@ public class KeySearch {
        
         // Search Key
 
-        public int searchKey(int key){
+        public void searchKey(int key){
 
             Node temp = head;
             int index =0;

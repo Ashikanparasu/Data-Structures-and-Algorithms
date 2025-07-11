@@ -95,7 +95,7 @@ public class demo {
     
             Node temp = head;
             while (temp.next.next != null){
-                temp = temp.next;
+                temp =    temp.next;
             }
             tail = temp;
             tail.next = null;

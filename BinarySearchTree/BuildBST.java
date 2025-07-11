@@ -43,10 +43,10 @@ public class BuildBST {
             return true;
         }
         if(root.data>val){
-            Search(root.left,val);
+            return Search(root.left,val);
         }
         else{
-         Search(root.right,val);
+            return Search(root.right,val);
         }
 
 

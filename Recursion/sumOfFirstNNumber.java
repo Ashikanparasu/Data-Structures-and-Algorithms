@@ -5,8 +5,8 @@ public class sumOfFirstNNumber {
             return 1;
         }
 
-        
-        int Sum = n + sum(n-1);
+        int Snm1 = sum(n-1);
+        int Sum = n + Snm1;
         return Sum;
     }
 

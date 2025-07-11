@@ -2,7 +2,7 @@
 
 public class StackLL {
     
-    public static class Node{
+    public  class Node{
         int data;
         Node next;
 
@@ -12,14 +12,20 @@ public class StackLL {
         }
     }
 
-   static Node head;
-   static Node tail;
+    Node head;
+    Node tail;
 
-    public static void push (int val){
+   public  boolean isEmpty(){
+
+    return head == null;
+   }
+
+    public  void push (int val){
         Node newNode = new Node(val);
 
         if(head == null){
             head = newNode;
+            return;
         }
 
         newNode.next = head;
@@ -28,20 +34,37 @@ public class StackLL {
 
     }
 
-    public static int pull(){
+    public  int remove(){
         if(head == null){
             return -1;
         }
 
         int val = head.data;
-        head.next = head ;
+        head = head.next;
         return val;
+    }
+
+    public  int pull(){
+        if(head == null){
+            return -1;
+        }
+
+        return head.data;
     }
 
     public static void main(String [] args){
 
         StackLL s = new StackLL();
         s.push(1);
+        s.push(2);
+        s.push(3);
+
+       System.out.println( s.isEmpty());
+
+       while(!s.isEmpty()){
+    System.out.println(s.remove());
+}
+
 
     }
 }

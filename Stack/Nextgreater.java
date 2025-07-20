@@ -1,5 +1,5 @@
 import java.util.Stack;
-public class NextGreater {
+public class Nextgreater {
 
     public static void NextGreater(int arr[]){
         

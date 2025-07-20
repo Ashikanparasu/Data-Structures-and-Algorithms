@@ -1,9 +1,7 @@
 import java.util.Stack;
 public class Nextgreater {
 
-    public static void NextGreater(int arr[]){
-        
-    }
+   
 
 
     public static void main(String[] args  ){
@@ -13,7 +11,7 @@ public class Nextgreater {
 
         for(int i =arr.length - 1; i>=0 ; i--){
 
-            while(!s.isEmpty() &&  arr[s.peek() <= arr[i]]){
+            while(!s.isEmpty() &&  arr[s.peek()] <= arr[i]){
                 s.pop();
             }
 
@@ -25,6 +23,10 @@ public class Nextgreater {
                 
             }
             s.push(i);
+        }
+
+        for(int i = 0 ;i< Greaterarr.length;i++){
+            System.out.print(Greaterarr[i] + " ");
         }
 
 

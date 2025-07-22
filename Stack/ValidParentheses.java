@@ -14,9 +14,9 @@ public class ValidParentheses {
                     return false;
                 }
 
-                if((s.peek() == '(' && a.charAt(i)=='(') 
-                || (s.peek() == '[' && a.charAt(i)=='[') 
-                || (s.peek() == '{' && a.charAt(i)=='{')){
+                if((s.peek() == '(' && a.charAt(i)==')') 
+                || (s.peek() == '[' && a.charAt(i)==']') 
+                || (s.peek() == '{' && a.charAt(i)=='}')){
 
                     s.pop();
                 }else{
@@ -35,7 +35,10 @@ public class ValidParentheses {
     public static void main(String [] args){
 
         String str = "[]{})";
-        System.out.print(valid(str));
+        String str1 = "((((((((((((((((((((({})))))))))))))))))))))";
+        System.out.println(valid(str));
+
+        System.out.println(valid(str1));
 
 
 

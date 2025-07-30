@@ -47,9 +47,34 @@ public class HasPath {
         return graph;
 
     }
+
+    public static boolean hasPath(ArrayList<edge> [] graph , int src, int dec , boolean vis[]){
+
+        if(src == dec){
+            return true;
+        }
+
+        vis[src] = true;
+
+        for(int i =0; i<graph[src].size();i++){
+
+            edge e = graph[src].get(i);
+
+
+            if(!vis[e.dec]){
+                hasPath(graph,e.dec,dec,vis);
+                return true;
+            }
+        }return false;
+
+
+    }
     public static void main(String [] args){
 
         ArrayList<edge>[] graph = createGraph(7);
+        boolean vis [] = new boolean[7];
+
+        System.out.println(hasPath(graph,0,5,vis));
 
 
     }

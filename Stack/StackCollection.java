@@ -9,7 +9,7 @@ public class StackCollection {
         s.push(2);
         s.push(3);
 
-        while(! s.isEmpty()){
+        while(! s.cloneisEmpty()){
             System.out.println(s.pop());
         }
         

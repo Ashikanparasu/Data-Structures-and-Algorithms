@@ -79,16 +79,21 @@ public class HashMapCode {
 
                 double lambda = (double) n/N;
                 if(lambda >2.0);
-                rehash()
+                rehash();
 
             }
             public boolean containKey(K key){
                 return false;
             }
 
-            public 
-        }
+            public st
+        
     }
+    public static void main(String [] args){
+
+    }
+
+}
 
 
     

@@ -73,7 +73,7 @@ public class HashMapCode {
                     node.value = value;
                 }else{
                     bucket[bi].add(new Node(key,value));
-                    n++
+                    n++;
 
                 }
 
@@ -86,7 +86,9 @@ public class HashMapCode {
                 return false;
             }
 
-            public st
+            public static void contain(K key){
+                return false;
+            }
         
     }
     public static void main(String [] args){
